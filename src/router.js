@@ -20,7 +20,7 @@ class RouterSpark extends Component {
     return (
       <Router>
         <div>
-          <nav className='navbar is-transparent'>
+          <nav className='navbar is-primary'>
             <div className='navbar-brand'>
               {navbar}
               <div className='navbar-burger burger'
