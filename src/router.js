@@ -17,10 +17,13 @@ class RouterSpark extends Component {
     //     alt='Bulma: a modern CSS framework based on Flexbox'
     //     width='112' height='28' />
     // </a>)
+
+    // <Link to='/about' className='navbar-item'>About</Link>
+
     return (
       <Router>
         <div>
-          <nav className='navbar is-primary'>
+          <nav className='navbar is-transparent'>
             <div className='navbar-brand'>
               {navbar}
               <div className='navbar-burger burger'
@@ -33,8 +36,9 @@ class RouterSpark extends Component {
 
             <div id='navbarExampleTransparentExample' className='navbar-menu'>
               <div className='navbar-start'>
-                <Link to='/' className='navbar-item'>Home</Link>
-                <Link to='/about' className='navbar-item'>About</Link>
+                <Link to='/' className='navbar-item'>
+                  <img src={logo} alt='World Talent Consulting' />
+                </Link>
               </div>
 
               <div className='navbar-end'>

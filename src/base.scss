@@ -1,4 +1,6 @@
 $primary: black;
+$white: white;
+$navbar-height: 5.5rem;
 
 .navbar{
   position: fixed !important;
@@ -12,4 +14,8 @@ $primary: black;
   background-image: url(http://wtc-talent.com/static/img/wtc.bec4019.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.home-full-img img{
+  padding-top: 10vh;
+  padding-left: 5vh;
 }
