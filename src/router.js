@@ -8,6 +8,7 @@ import Home from './pages/home.js'
 import About from './pages/about.js'
 
 import logo from './assets/img/logo.png'
+import logoBP from './assets/img/logoBlazePixel.png'
 
 class RouterSpark extends Component {
   render () {
@@ -51,6 +52,18 @@ class RouterSpark extends Component {
           </nav>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
+          <footer className='footer'>
+            <div className='container'>
+              <div className='content has-text-centered'>
+                <p>
+                  <strong>Powered by</strong> <a href='http://blazepxel.com/' target='_blanck'>
+                  Blaze Pixel.
+                    <img src={logoBP} alt='Blaze Pixel' style={{width: 50, height: 50}} />
+                  </a>
+                </p>
+              </div>
+            </div>
+          </footer>
         </div>
       </Router>
     )
