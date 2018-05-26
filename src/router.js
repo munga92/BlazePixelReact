@@ -43,6 +43,18 @@ class RouterSpark extends Component {
               </div>
 
               <div className='navbar-end'>
+                <Link to='/' className='navbar-item'>
+                 Inicio
+                </Link>
+                <Link to='#' className='navbar-item'>
+                 Nosotros
+                </Link>
+                <Link to='#' className='navbar-item'>
+                 Servicios
+                </Link>
+                <Link to='#' className='navbar-item'>
+                 Contáctanos
+                </Link>
                 <div className='navbar-item'>
                   <div className='field is-grouped'>
                   </div>
