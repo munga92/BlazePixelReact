@@ -5,26 +5,50 @@ import {
   Link
 } from 'react-router-dom'
 import Home from './pages/home.js'
-import About from './pages/about.js'
 
 import logo from './assets/img/logo.png'
+import logoBlaze from './assets/img/icon-blaze.png'
 import logoBP from './assets/img/logoBlazePixel.png'
+import $ from 'jquery'
 
 class RouterSpark extends Component {
-  render () {
-    var navbar =  ''
-    // var navbar =  (<a className='navbar-item' href='https://bulma.io'>
-    //   <img src='https://bulma.io/images/bulma-logo.png'
-    //     alt='Bulma: a modern CSS framework based on Flexbox'
-    //     width='112' height='28' />
-    // </a>)
+  constructor () {
+    super()
+    this.state = {
+      classHeader: 'is-transparent',
+      showImg: false
+    }
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll)
+  }
 
-    // <Link to='/about' className='navbar-item'>About</Link>
+  handleScroll (e) {
+    if ($(window).scrollTop() > 100) {
+      this.setState({classHeader: 'is-black', showImg: true})
+    } else {
+      this.setState({classHeader: 'is-transparent', showImg: false})
+    }
+  }
+
+  render () {
+    var {showImg} = this.state
+    var navbar = ''
+    if (showImg) {
+      navbar = (<Link to='/' className='navbar-item-logo'>
+        <img src={logoBlaze} alt='World Talent Consulting' />
+      </Link>)
+    } else {
+      navbar = (<Link to='/' className=''>
+        <img style={{width: 200, height: 80}} src={logo} alt='World Talent Consulting' />
+      </Link>)
+    }
 
     return (
       <Router>
         <div>
-          <nav className='navbar is-transparent'>
+          <nav className={'navbar ' + this.state.classHeader}>
             <div className='navbar-brand'>
               {navbar}
               <div className='navbar-burger burger'
@@ -36,12 +60,6 @@ class RouterSpark extends Component {
             </div>
 
             <div id='navbarExampleTransparentExample' className='navbar-menu'>
-              <div className='navbar-start'>
-                <Link to='/' className='navbar-item'>
-                  <img src={logo} alt='World Talent Consulting' />
-                </Link>
-              </div>
-
               <div className='navbar-end'>
                 <Link to='/' className='navbar-item'>
                  Inicio
@@ -63,7 +81,6 @@ class RouterSpark extends Component {
             </div>
           </nav>
           <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
           <footer className='footer'>
             <div className='container'>
               <div className='content has-text-centered'>
