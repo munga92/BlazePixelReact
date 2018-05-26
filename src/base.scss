@@ -3,6 +3,7 @@ $white: white;
 $navbar-height: 5.5rem;
 
 .navbar{
+  background-color: transparent !important;
   position: fixed !important;
   width: 100%;
 }
@@ -11,11 +12,80 @@ $navbar-height: 5.5rem;
 }
 .home-full-img{
   height: 100vh;
-  background-image: url('./assets/img/fondo.jpg');
+  background-image: url('./assets/img/header-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  .columns{
+  	padding-top: 15vh
+  }
+  .mockup{
+  	width: 50%;
+  }
+
+  img{
+	  padding-top: 10vh;
+	  padding-left: 5vh;
+	}
 }
-.home-full-img img{
-  padding-top: 10vh;
-  padding-left: 5vh;
+
+.home-img{
+	width: 50%;
+}
+
+.home-text{
+	width: 50%;
+}
+
+.padding-top{
+	padding-top: 20vh;
+}
+
+.wave{
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(220,12,19,1) 0%, rgba(242,78,28,1) 100%);
+}
+
+.wave-text{
+	padding-top: 10vh;
+	padding-bottom: 5vh;
+}
+
+.curve{
+	background-image: url('./assets/img/curva.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	height: 100%;
+}
+
+.card{
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.navbar-item-img{
+	// width: 220px !important;
+	// height: 80px !important;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+.navbar-item-img img{
+	height: 100%;
+}
+.is-black{
+	background-color: #3A3A3A !important;
+}
+
+.navbar-item-logo{
+	// background-color: white;
+	align-self: center;
+	img{
+		height: 100%;
+		margin: 5px;
+	}
+	height: 80px;
+	padding: 10px;
+}
+.navbar-brand{
+	align-self: center;
 }
