@@ -31,7 +31,7 @@ const Home = () => (
       </div>
     </div>
   </div>
-    
+
   <div className='wave'>
     <div className='container'>
       <div align="center" className='wave-text'>
