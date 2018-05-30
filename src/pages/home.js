@@ -7,6 +7,7 @@ import apps from '../assets/img/apps.png'
 import sw from '../assets/img/software.png'
 import curve from '../assets/img/curva.png'
 import construction from '../assets/img/construccion.png'
+import Contact from './contact'
 
 const Home = () => (
 <div>
@@ -128,6 +129,7 @@ const Home = () => (
       </div>
     </div>
   </div>
+  <Contact />
 </div>
 )
 

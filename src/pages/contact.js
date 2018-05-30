@@ -9,7 +9,8 @@ class Contact extends Component {
         email: '',
         subject: '',
         message: ''
-      }
+      },
+      error: false
     }
   }
 
@@ -22,18 +23,27 @@ class Contact extends Component {
   async handleSubmit (e) {
     var {form} = this.state
     e.preventDefault()
-    try {
-      await axios.post('http://blazepxel.com/api/contact', form)
-      this.setState({form: {}})
-    } catch (e) {
-      console.log(e)
+    if (!!form.name && !!form.email) {
+      try {
+        await axios.post('http://localhost:8000/api/contact', form)
+        this.setState({form: {
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        }, error: false})
+      } catch (e) {
+        console.log(e)
+      }
+    } else {
+      this.setState({error: true})
     }
   }
 
   render () {
-    var {form} = this.state
+    var {form, error} = this.state
 
-    return (<div className='container'>
+    return (<div className='section'>
       <form onSubmit={(e) => this.handleSubmit(e)}>
         <div className='field'>
           <label className='label'>Nombre</label>
@@ -85,6 +95,9 @@ class Contact extends Component {
               onChange={(e) => this.handleChangeForm(e)} />
           </div>
         </div>
+        { error && (<div className='notification is-danger'>
+          Formulario no valido.
+        </div>)}
 
         <div className='field is-grouped'>
           <div className='control'>
