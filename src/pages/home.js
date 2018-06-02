@@ -9,7 +9,7 @@ import curve from '../assets/img/curva.png'
 import divider from '../assets/img/divisor-titulos.png'
 import technologies from '../assets/img/tecnologias.png'
 import construction from '../assets/img/construccion.png'
-
+import Contact from './contact'
 const Home = () => (
 <div>
   <div className='home-full-img'>
@@ -136,7 +136,7 @@ const Home = () => (
       <h1><b>TECNOLOGÍAS</b> QUE ENCAJAN PERFECTO</h1>
       <img src={divider} />
       <p>Nam liber tempor cum soluta nobis eleifend option congue <br /> nihil imperdiet doming id quod mazim.</p>
-      <img src={technologies} />  
+      <img src={technologies} />
     </div>
   </div>
 
@@ -155,6 +155,7 @@ const Home = () => (
       </div>
     </div>
   </div>
+  <Contact />
 </div>
 )
 
