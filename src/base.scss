@@ -25,7 +25,7 @@ html *
   height: 100vh;
   background-image: url('./assets/img/header-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   .columns{
   	padding-top: 15vh
   }
@@ -55,7 +55,7 @@ html *
 
 .wave{
 	height: 100%;
-	background: linear-gradient(to bottom, rgba(220,12,19,1) 0%, rgba(242,78,28,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,22,53,1) 0%, rgba(242,78,28,1) 100%);
 }
 
 .wave-text{
@@ -64,11 +64,7 @@ html *
 }
 
 .curve{
-	background-image: url('./assets/img/curva.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center bottom;
-	height: 100%;
+	margin-bottom: -6vh;
 }
 
 .card{
@@ -116,4 +112,20 @@ html *
 }
 .navbar-brand{
 	align-self: center;
+}
+
+.technologies{
+	height: 80vh;
+	background: linear-gradient(to bottom, rgba(255,181,64,1) 0%, rgba(244,104,61,1) 100%);
+}
+
+.contact{
+	height: 100vh;
+	background-image: url('./assets/img/bg-contacto.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	.card{
+		height: 500px;
+		background-color: rgb(255,181,64);
+	}
 }
