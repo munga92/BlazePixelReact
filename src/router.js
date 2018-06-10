@@ -16,7 +16,8 @@ class RouterSpark extends Component {
     super()
     this.state = {
       classHeader: 'is-transparent',
-      showImg: false
+      showImg: false,
+      showMenu: false
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -26,10 +27,18 @@ class RouterSpark extends Component {
 
   handleScroll (e) {
     if ($(window).scrollTop() > 100) {
-      this.setState({classHeader: 'is-black', showImg: true})
+      this.setState({classHeader: 'header-black', showImg: true})
     } else {
       this.setState({classHeader: 'is-transparent', showImg: false})
     }
+  }
+
+  handleClickMenuBurguer () {
+    this.setState((prevState) => {
+      return {
+        showMenu: !prevState.showMenu
+      }
+    })
   }
 
   render () {
@@ -41,7 +50,7 @@ class RouterSpark extends Component {
       </Link>)
     } else {
       navbar = (<Link to='/' className=''>
-        <img style={{width: 200, height: 80}} src={logo} alt='World Talent Consulting' />
+        <img src={logo} alt='Blaze Pixel' />
       </Link>)
     }
 
@@ -51,7 +60,8 @@ class RouterSpark extends Component {
           <nav className={'navbar ' + this.state.classHeader}>
             <div className='navbar-brand'>
               {navbar}
-              <div className='navbar-burger burger'
+              <div className={'navbar-burger burger ' + (this.state.showMenu ? 'is-active' : '')}
+                onClick={() => this.handleClickMenuBurguer()}
                 data-target='navbarExampleTransparentExample'>
                 <span />
                 <span />
@@ -59,7 +69,7 @@ class RouterSpark extends Component {
               </div>
             </div>
 
-            <div id='navbarExampleTransparentExample' className='navbar-menu'>
+            <div id='navbarExampleTransparentExample' className={'navbar-menu' + (this.state.showMenu ? 'is-active' : '')} >
               <div className='navbar-end'>
                 <Link to='/' className='navbar-item'>
                  Inicio
@@ -81,10 +91,10 @@ class RouterSpark extends Component {
             </div>
           </nav>
           <Route exact path='/' component={Home} />
-          <footer className='footer'>
+          <footer className='footer is-black'>
             <div className='container'>
               <div className='content has-text-centered'>
-                <p>
+                <p className='is-font-white'>
                   <strong>Powered by</strong> <a href='http://blazepxel.com/' target='_blanck'>
                   Blaze Pixel.
                     <img src={logoBP} alt='Blaze Pixel' style={{width: 50, height: 50}} />
