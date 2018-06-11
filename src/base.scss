@@ -34,11 +34,14 @@ html *
 		margin: 0 auto;
 		height: auto;
   }
-
   img{
 	  padding-top: 10vh;
 	  padding-left: 5vh;
 	}
+  .title_one{
+    padding-top: 40px;
+    font-size: 30px;
+  }
 }
 
 .home-img{
@@ -78,7 +81,7 @@ html *
 	align-self: center;
 	img{
 		height: 100%;
-		margin: 5px;
+		margin: 5px 5px 5px 15px;
 	}
 	height: 80px;
 	padding: 10px;
@@ -137,23 +140,95 @@ html *
 	align-self: center;
 }
 
+.construction{
+  .container{
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .construction_top{
+    padding-bottom: 10px;
+  }
+  .construction_bottom{
+    padding-top: 10px;
+  }
+}
+
 .technologies{
 	height: 80vh;
-	background: linear-gradient(to bottom, rgba(255,181,64,1) 0%, rgba(244,104,61,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,181,64,1) 0%, rgba(244,104,61,1) 100%);
+  .title_two{
+  	padding-top: 30px;
+  }
+  .modules{
+    margin-top: -45px;
+    width: 60%;
+  }
 }
 
 .contact{
-	height: 100vh;
+	height: auto;
 	background-image: url('./assets/img/bg-contacto.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	.card{
-		height: 500px;
+		height: auto;
 		background-color: rgb(255,181,64);
-	}
+  }
+  .container-contact{
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
 }
+
+.contact-text-align{
+	display: flex;
+	align-items: center;
+  	justify-content: center; 
+	
+}
+
+.contact-main-text{
+	font-size: 45px;
+	
+}
+
+span.contact-main-text{
+	color: rgb(255,181,64);
+}
+
+.contact-text{
+	
+	font-size: 22px;
+	
+}
+
 .is-font-white{
 	*{
 		color: white !important;
 	}
+}
+
+.title_two{
+  font-size: 47px !important;
+  color: #FFFFFF !important;
+  font-weight: lighter !important;
+}
+
+.subtitle_two{
+  color: #FFFFFF !important;
+}
+
+.primary{
+  background-color: #F4683D !important;
+  color: #FFFFFF !important;
+}
+
+.title_three{
+  font-size: 47px !important;
+  font-weight: lighter !important;
+}
+
+.secondary{
+  color: #000000 !important;
+  background-color: #FFFFFF !important;
 }

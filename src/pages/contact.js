@@ -33,66 +33,90 @@ class Contact extends Component {
   render () {
     var {form} = this.state
 
-    return (<div className='container'>
-      <form onSubmit={(e) => this.handleSubmit(e)}>
-        <div className='field'>
-          <label className='label'>Nombre</label>
-          <div className='control'>
-            <input
-              className='input is-success'
-              name='name'
-              type='text'
-              value={form.name}
-              placeholder='Manuel Rosales'
-              onChange={(e) => this.handleChangeForm(e)} />
-          </div>
-        </div>
+    return (
+        <form onSubmit={(e) => this.handleSubmit(e)}>
 
-        <div className='field'>
-          <label className='label'>Email</label>
-          <div className='controL'>
-            <input
-              className='input is-success'
-              name='email'
-              type='email'
-              value={form.email}
-              placeholder='manuelrosales@ejemplo.com'
-              onChange={(e) => this.handleChangeForm(e)} />
+          <div className='field is-horizontal'>
+            <div className='field-label'>
+              <label className='label'>Nombre</label>
+            </div>
+            <div className='field-body'>
+              <div className='field'>
+                <div className='control'>
+                  <input
+                    className='input is-success'
+                    name='name'
+                    type='text'
+                    value={form.name}
+                    placeholder=''
+                    onChange={(e) => this.handleChangeForm(e)} />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className='field'>
-          <label className='label'>Asunto</label>
-          <div className='control'>
-            <input
-              className='input is-success'
-              name='subject'
-              type='text'
-              placeholder='Cotización'
-              value={form.subject}
-              onChange={(e) => this.handleChangeForm(e)} />
+          <div className='field is-horizontal'>
+            <div className='field-label'>
+              <label className='label'>Email</label>
+            </div>
+            <div className='field-body'>
+              <div className='field'>
+                <div className='control'>
+                  <input
+                    className='input is-success'
+                    name='email'
+                    type='email'
+                    value={form.email}
+                    placeholder=''
+                    onChange={(e) => this.handleChangeForm(e)} />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className='field'>
-          <label className='label'>Mensaje</label>
-          <div className='control'>
-            <textarea
-              className='textarea'
-              placeholder=''
-              value={form.message}
-              name='message'
-              onChange={(e) => this.handleChangeForm(e)} />
+          <div className='field is-horizontal'>
+            <div className='field-label'>
+              <label className='label'>Asunto</label>
+            </div>
+            <div className='field-body'>
+              <div className='field'>
+                <div className='control'>
+                  <input
+                    className='input is-success'
+                    name='subject'
+                    type='text'
+                    placeholder=''
+                    value={form.subject}
+                    onChange={(e) => this.handleChangeForm(e)} />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className='field is-grouped'>
-          <div className='control'>
-            <button className='button is-link'>Enviar</button>
+          <div className='field is-horizontal'>
+            <div className='field-label'>
+              <label className='label'>Mensaje</label>
+            </div>
+            <div className='field-body'>
+              <div className='field'>
+                <div className='control'>
+                  <textarea
+                    className='textarea'
+                    placeholder=''
+                    value={form.message}
+                    name='message'
+                    onChange={(e) => this.handleChangeForm(e)} />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
+
+          <div className='field is-grouped'>
+            <div className='control' align="center">
+              <button className='button is-rounded is-large secondary'>Enviar</button>
+            </div>
+          </div>
+        </form>
     )
   }
 }
