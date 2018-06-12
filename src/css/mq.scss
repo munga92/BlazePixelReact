@@ -5,6 +5,19 @@
   .home-full-img{
     background: transparent;
   }
+  .technologies{
+    .subtitle_two{
+      padding-bottom: 3.5rem;
+    }
+  }
+  .container-contact{
+    padding-top: 7.5rem;
+  }
+  .contact{
+    .container-contact{
+      padding-top: 7.5rem;
+    }
+  }
 }
 
 @include desktop-only {
