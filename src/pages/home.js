@@ -150,7 +150,7 @@ const Home = () => (
   <div className='contact'>
     <div className='section container-contact'>
       <div className='columns'>
-        <div className='column is-two-fifths contact-text-align '>
+        <div className='column' style={{textAlign: 'center'}}>
           <h1 className='contact-main-text'><b>Nos encantaría saber</b></h1>
           <span className='contact-main-text'><b>¿Qué tienes en mente?</b></span>
           <h3 className='contact-text '>Cuéntanos, estamos listos para hacerlo realidad.</h3>

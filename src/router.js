@@ -45,13 +45,10 @@ class RouterSpark extends Component {
     var {showImg} = this.state
     var navbar = ''
     if (showImg) {
-      navbar = (<Link to='/' className='navbar-item-logo'>
-        <img src={logoBlaze} alt='World Talent Consulting' />
-      </Link>)
+      navbar = (<img src={logoBlaze} alt='World Talent Consulting' width="38" height="50" />)
     } else {
-      navbar = (<Link to='/' className=''>
-        <img src={logo} alt='Blaze Pixel' />
-      </Link>)
+      navbar = (
+        <img src={logo} alt='Blaze Pixel' width="150" height="50" />)
     }
 
     return (
@@ -59,7 +56,9 @@ class RouterSpark extends Component {
         <div>
           <nav className={'navbar ' + this.state.classHeader}>
             <div className='navbar-brand'>
-              {navbar}
+              <a class="navbar-item">
+                {navbar}
+              </a>
               <div className={'navbar-burger burger ' + (this.state.showMenu ? 'is-active' : '')}
                 onClick={() => this.handleClickMenuBurguer()}
                 data-target='navbarExampleTransparentExample'>
