@@ -113,7 +113,9 @@ class Contact extends Component {
 
           <div className='field is-grouped'>
             <div className='control' align="center">
-              <button className='button is-rounded is-large secondary'>Enviar</button>
+              <button className='button is-rounded is-large secondary'>
+                <label>Enviar</label>
+              </button>
             </div>
           </div>
         </form>

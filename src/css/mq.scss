@@ -1,0 +1,17 @@
+@include touch {
+  .curve{
+    display: none;
+  }
+  .home-full-img{
+    background: transparent;
+  }
+}
+
+@include desktop-only {
+
+}
+
+@include widescreen-only {
+}
+
+@include fullhd {}
