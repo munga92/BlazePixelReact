@@ -13,7 +13,7 @@ import Contact from './contact'
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='container'>
+    <div className='section'>
       <div className='columns'>
         <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
           <img className='mockup' src={mockup} />
