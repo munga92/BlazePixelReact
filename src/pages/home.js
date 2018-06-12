@@ -37,7 +37,7 @@ const Home = () => (
   </div>
 
   <div className='wave'>
-    <div className='container'>
+    <div className='section'>
       <div align="center" className='wave-text'>
         <h1 className="title_two">PODEMOS CREAR</h1>
         <img src={divider} />
@@ -109,7 +109,7 @@ const Home = () => (
       <img src={divider} />
       <p className='subtitle'>Nam liber tempor cum soluta nobis eleifend option congue <br /> nihil imperdiet doming id quod mazim.</p>
     </div>
-    <div className='container'>
+    <div className='section'>
       <div className='columns'>
         <div className='column'>
           <div align="right" className='construction_top'>
@@ -138,7 +138,7 @@ const Home = () => (
     </div>
   </div>
 
-  <div className='technologies'>
+  <div className='technologies section'>
     <div align='center'>
       <h1 className='title_two'><b>TECNOLOGÍAS</b> QUE ENCAJAN PERFECTO</h1>
       <img src={divider} />
@@ -148,7 +148,7 @@ const Home = () => (
   </div>
 
   <div className='contact'>
-    <div className='container container-contact'>
+    <div className='section container-contact'>
       <div className='columns'>
         <div className='column is-two-fifths contact-text-align '>
           <h1 className='contact-main-text'><b>Nos encantaría saber</b></h1>
@@ -165,7 +165,7 @@ const Home = () => (
       </div>
     </div>
   </div>
-  
+
 </div>
 )
 
