@@ -103,7 +103,7 @@ const Home = () => (
     <img src={curve} className='curve' />
   </div>
 
-  <div className='construction' id='about'>
+  <div className='construction section' id='about'>
     <div align="center">
       <h1 className='title_three'><b>CONSTRUYAMOS</b> ALGO GENIAL JUNTOS</h1>
       <img src={divider} />
@@ -147,7 +147,7 @@ const Home = () => (
     </div>
   </div>
 
-  <div className='contact'>
+  <div className='contact' id='contact'>
     <div className='section container-contact'>
       <div className='columns'>
         <div className='column' style={{textAlign: 'center'}}>
@@ -157,7 +157,7 @@ const Home = () => (
         </div>
         <div className='column'>
           <div className="card">
-            <div className="card-content" id='contact'>
+            <div className="card-content">
               <Contact />
             </div>
           </div>
