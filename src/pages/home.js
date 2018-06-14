@@ -13,7 +13,7 @@ import Contact from './contact'
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='section'>
+    <div className='section' id='main'>
       <div className='columns'>
         <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
           <img className='mockup' src={mockup} />
@@ -36,7 +36,7 @@ const Home = () => (
     </div>
   </div>
 
-  <div className='wave'>
+  <div className='wave' id='services'>
     <div className='section'>
       <div align="center" className='wave-text'>
         <h1 className="title_two">PODEMOS CREAR</h1>
@@ -103,7 +103,7 @@ const Home = () => (
     <img src={curve} className='curve' />
   </div>
 
-  <div className='construction'>
+  <div className='construction' id='about'>
     <div align="center">
       <h1 className='title_three'><b>CONSTRUYAMOS</b> ALGO GENIAL JUNTOS</h1>
       <img src={divider} />
@@ -157,7 +157,7 @@ const Home = () => (
         </div>
         <div className='column'>
           <div className="card">
-            <div className="card-content">
+            <div className="card-content" id='contact'>
               <Contact />
             </div>
           </div>

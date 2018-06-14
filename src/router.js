@@ -70,18 +70,18 @@ class RouterSpark extends Component {
 
             <div id='navbarExampleTransparentExample' className={'navbar-menu' + (this.state.showMenu ? 'is-active' : '')} >
               <div className='navbar-end'>
-                <Link to='/' className='navbar-item'>
-                 Inicio
-                </Link>
-                <Link to='#' className='navbar-item'>
-                 Nosotros
-                </Link>
-                <Link to='#' className='navbar-item'>
-                 Servicios
-                </Link>
-                <Link to='#' className='navbar-item'>
-                 Contáctanos
-                </Link>
+                <a class="navbar-item" href="#main" onClick={() => this.setState({showMenu: false})}>
+                  Inicio
+                </a>
+                <a class="navbar-item" href="#services" onClick={() => this.setState({showMenu: false})}>
+                  Servicios
+                </a>
+                <a class="navbar-item" href="#about" onClick={() => this.setState({showMenu: false})}>
+                  Nosotros
+                </a>
+                <a class="navbar-item" href="#contact" onClick={() => this.setState({showMenu: false})}>
+                  Contáctanos
+                </a>
                 <div className='navbar-item'>
                   <div className='field is-grouped'>
                   </div>
