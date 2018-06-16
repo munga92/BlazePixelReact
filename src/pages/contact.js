@@ -37,9 +37,6 @@ class Contact extends Component {
         <form onSubmit={(e) => this.handleSubmit(e)}>
 
           <div className='field is-horizontal'>
-            <div className='field-label'>
-              <label className='label'>Nombre</label>
-            </div>
             <div className='field-body'>
               <div className='field'>
                 <div className='control'>
@@ -47,8 +44,8 @@ class Contact extends Component {
                     className='input'
                     name='name'
                     type='text'
+                    placeholder={'Nombre'}
                     value={form.name}
-                    placeholder=''
                     onChange={(e) => this.handleChangeForm(e)} />
                 </div>
               </div>
@@ -56,18 +53,15 @@ class Contact extends Component {
           </div>
 
           <div className='field is-horizontal'>
-            <div className='field-label'>
-              <label className='label'>Email</label>
-            </div>
             <div className='field-body'>
               <div className='field'>
                 <div className='control'>
                   <input
-                    className='input '
+                    className='input'
                     name='email'
                     type='email'
+                    placeholder={'Email'}
                     value={form.email}
-                    placeholder=''
                     onChange={(e) => this.handleChangeForm(e)} />
                 </div>
               </div>
@@ -75,9 +69,6 @@ class Contact extends Component {
           </div>
 
           <div className='field is-horizontal'>
-            <div className='field-label'>
-              <label className='label'>Asunto</label>
-            </div>
             <div className='field-body'>
               <div className='field'>
                 <div className='control'>
@@ -85,7 +76,7 @@ class Contact extends Component {
                     className='input '
                     name='subject'
                     type='text'
-                    placeholder=''
+                    placeholder='Asunto'
                     value={form.subject}
                     onChange={(e) => this.handleChangeForm(e)} />
                 </div>
@@ -94,15 +85,12 @@ class Contact extends Component {
           </div>
 
           <div className='field is-horizontal'>
-            <div className='field-label'>
-              <label className='label'>Mensaje</label>
-            </div>
             <div className='field-body'>
               <div className='field'>
                 <div className='control'>
                   <textarea
                     className='textarea'
-                    placeholder=''
+                    placeholder='Mensaje'
                     value={form.message}
                     name='message'
                     onChange={(e) => this.handleChangeForm(e)} />
@@ -111,12 +99,10 @@ class Contact extends Component {
             </div>
           </div>
 
-          <div className='field is-grouped'>
-            <div className='control' align="center">
-              <button className='button is-rounded is-large secondary'>
-                <label>Enviar</label>
-              </button>
-            </div>
+          <div className='control'>
+            <button className='button is-fullwidth is-success'>
+              <label>Enviar</label>
+            </button>
           </div>
         </form>
     )

@@ -45,10 +45,10 @@ class RouterSpark extends Component {
     var {showImg} = this.state
     var navbar = ''
     if (showImg) {
-      navbar = (<img src={logoBlaze} alt='World Talent Consulting' width="38" height="50" />)
+      navbar = (<img src={logoBlaze} alt='World Talent Consulting' width="38" height="40" />)
     } else {
       navbar = (
-        <img src={logo} alt='Blaze Pixel' width="150" height="50" />)
+        <img src={logo} alt='Blaze Pixel' width="130" height="40" />)
     }
 
     return (
@@ -70,16 +70,16 @@ class RouterSpark extends Component {
 
             <div id='navbarExampleTransparentExample' className={'navbar-menu' + (this.state.showMenu ? 'is-active' : '')} >
               <div className='navbar-end'>
-                <a class="navbar-item" href="#main" onClick={() => this.setState({showMenu: false})}>
+                <a className="navbar-item" href="#main" onClick={() => this.setState({showMenu: false})}>
                   Inicio
                 </a>
-                <a class="navbar-item" href="#services" onClick={() => this.setState({showMenu: false})}>
+                <a className="navbar-item" href="#services" onClick={() => this.setState({showMenu: false})}>
                   Servicios
                 </a>
-                <a class="navbar-item" href="#about" onClick={() => this.setState({showMenu: false})}>
+                <a className="navbar-item" href="#about" onClick={() => this.setState({showMenu: false})}>
                   Nosotros
                 </a>
-                <a class="navbar-item" href="#contact" onClick={() => this.setState({showMenu: false})}>
+                <a className="navbar-item" href="#contact" onClick={() => this.setState({showMenu: false})}>
                   Contáctanos
                 </a>
                 <div className='navbar-item'>

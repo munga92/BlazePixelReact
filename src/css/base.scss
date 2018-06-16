@@ -198,7 +198,11 @@ span.contact-main-text{
   background-color: #FFFFFF !important;
 }
 .navbar{
-	font-size: 1.5rem;
+	font-size: 1rem;
+	.navbar-item{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
 .navbar-item{
 	img{
