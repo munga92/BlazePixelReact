@@ -21,15 +21,21 @@ const Home = () => (
         <div className='column'>
           <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus tempus iaculis. Aliquam iaculis eleifend dolor, a aliquam augue semper eu. In ultricies ex ligula, ut placerat diam mattis ac.
+            Desarrollamos soluciones y herramientas tecnologicas a la medida de tu empresa.
+          </p>
+          <p>
+            Tienes una gran idea nosotros te ayudamos a transformarla en una herramienta.
           </p>
           <div className='columns '>
             <div className='column'>
-              <a href="#" className='button is-rounded is-primary is-outlined'>CONTÁCTANOS</a>
+              <a href="#contact" className='button is-rounded is-primary is-outlined'>CONTÁCTANOS</a>
             </div>
-            <div className='column'>
-              <a href="#" className='button is-rounded is-danger is-outlined'>EMPEZAR</a>
-            </div>
+            {
+              // <div className='column'>
+              //   <a href="#" className='button is-rounded is-danger is-outlined'>EMPEZAR</a>
+              // </div>
+            }
+
           </div>
         </div>
       </div>
@@ -41,15 +47,17 @@ const Home = () => (
       <div align="center" className='wave-text'>
         <h1 className="title_two">PODEMOS CREAR</h1>
         <img src={divider} />
-        <p className='subtitle_two'>Nam liber tempor cum soluta nobis eleifend option congue <br/> nihil imperdiet doming id quod mazim.</p>
+        <p className='subtitle_two'>
+          Las herramientas tecnologicas que necesita tu empresa, <br /> quieres mejorar un proceso dentro de tu organizacion nosotros podemos ayudarte.
+        </p>
       </div>
       <div className='columns'>
-        <div className='column is-two-fifths'>
-          <img src={devices} />
+        <div className='column is-two-fifths is-flex' style={{maxHeight: '600px', justifyContent: 'center'}}>
+          <img src={devices} style={{maxHeight: '600px'}}/>
         </div>
         <div className='column'>
           <div class="card">
-            <div class="card-content">
+            <div class="card-content" style={{minHeight: '370px'}}>
               <div align="center">
                 <img src={web_desing} />
               </div>
@@ -58,15 +66,17 @@ const Home = () => (
                 Diseño Web y Gráfico.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh. Sed lacinia, dui non feugiat consequat, neque massa sodales nulla, sit amet tempus ligula nunc eget elit. Etiam efficitur non diam nec ultrices. Fusce luctus velit quis nulla ullamcorper ullamcorper. Maecenas et
+                Combinamos las tecnologias web escalables y flexibles con enfoque en experiencia de usuario, usabilidad, interactividad y distribución, contenido y graficos a la medida
               </p>
-              <a href="#" className='button is-rounded primary'>Estoy interesado</a>
+            </div>
+            <div className='card-content'>
+              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
             </div>
           </div>
         </div>
         <div className='column'>
           <div class="card">
-            <div class="card-content">
+            <div class="card-content" style={{minHeight: '370px'}}>
               <div align="center">
                 <img src={apps} />
               </div>
@@ -75,15 +85,17 @@ const Home = () => (
                 Desarrollo de Apps Móviles.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh. Sed lacinia, dui non feugiat consequat, neque massa sodales nulla, sit amet tempus ligula nunc eget elit. Etiam efficitur non diam nec ultrices. Fusce luctus velit quis nulla ullamcorper ullamcorper. Maecenas et
+                Desarrollamos la aplicacion movil que tienes en mente, tecnologias escalables y multiplataforma, interacción entre tu sistema y tu aplicación
               </p>
-              <a href="#" className='button is-rounded primary'>Estoy interesado</a>
+            </div>
+            <div className='card-content'>
+              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
             </div>
           </div>
         </div>
         <div className='column'>
           <div class="card">
-            <div class="card-content">
+            <div class="card-content" style={{minHeight: '370px'}}>
               <div align="center">
                 <img src={sw} />
               </div>
@@ -92,47 +104,66 @@ const Home = () => (
                 Software a la medida.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh. Sed lacinia, dui non feugiat consequat, neque massa sodales nulla, sit amet tempus ligula nunc eget elit. Etiam efficitur non diam nec ultrices. Fusce luctus velit quis nulla ullamcorper ullamcorper. Maecenas et
+                Buscamos la mejor solución que se adapte a tu empresa, analisis y definicion de requiriemiento, interaccion con sistemas existentes, dispositivos moviles y bases de datos.
               </p>
-              <a href="#" className='button is-rounded primary'>Estoy interesado</a>
+            </div>
+            <div className='card-content'>
+              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <img src={curve} className='curve' />
   </div>
 
   <div className='construction section' id='about'>
     <div align="center">
       <h1 className='title_three'><b>CONSTRUYAMOS</b> ALGO GENIAL JUNTOS</h1>
       <img src={divider} />
-      <p className='subtitle'>Nam liber tempor cum soluta nobis eleifend option congue <br /> nihil imperdiet doming id quod mazim.</p>
+      <p className='subtitle'>Compartenos tus proyectos <br /> y construyamos algo increible juntos.</p>
     </div>
     <div className='section'>
       <div className='columns'>
         <div className='column'>
-          <div align="right" className='construction_top'>
+          <div align="right" className='construction_top' style={{minHeight: '200px'}}>
             <p><b>Creamos soluciones tecnológicas <br /> hechas a la medida de su empresa.</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh. Sed lacinia, dui non feugiat consequat, neque massa sodales nulla, sit amet tempus ligula nunc eget elit. Etiam efficitur non diam nec ultrices. Fusce luctus velit quis nulla ullamcorper</p>
+            <p>
+              Nos enfocamos en la solución a tu problema, desarrollamos la herramienta desde cero
+              y personalizada, llevamos acabo un analisis abordamos la problematica y obtenemos soluciones
+              metodologicas.
+             </p>
           </div>
-          <div align="right" className='construction_bottom'>
-            <p><b>Creatividad e innovación, la <br /> mezcla perfecta.</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh. Sed lacinia, dui non feugiat consequat, neque massa sodales nulla, sit amet tempus ligula nunc eget elit.</p>
-          </div>
+
+            <div align="right" className='construction_bottom' style={{minHeight: '200px'}}>
+              <p><b>Creatividad e innovación, la <br /> mezcla perfecta.</b></p>
+              <p>
+                Nuestro equipo de trabajo contribuye con sus ideas y conocimientos para generar soluciones creativas e innovadoras, y así llevar nuestros productos a la mayor satisfacción de nuestros clientes.
+              </p>
+            </div>
+
         </div>
         <div className='column'>
           <img src={construction} />
         </div>
         <div className='column'>
-          <div className='construction_top'>
+          <div className='construction_top' style={{minHeight: '200px'}}>
             <p><b>Calidad y funcionalidad son <br /> nuestros principios.</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh.</p>
+            <p>
+              Durante el proceso de desarrollo nos encargamos de que se apliquen
+              las mejores practicas para lograr productos escalables, flexibles y
+              de alta calidad, que cubran los requerimientos de la industria tecnologica.
+             </p>
           </div>
-          <div className='construction_bottom'>
+
+          <div className='construction_bottom' style={{minHeight: '200px'}}>
             <p><b>Nos enfocamos en brindar el <br /> mejor servicio, al menor costo.</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, enim ac tincidunt tempus, mi quam ornare leo, eget dignissim arcu mauris vel diam. Fusce non justo rutrum, aliquet quam eget, eleifend nibh. Sed lacinia, dui non feugiat consequat, neque massa sodales lectus.</p>
+            <p>
+              Nuestros clíentes son lo más importante para nosotros, por tal motivo
+              ofrecemos el mejor de los servicios básados en la comunicación,
+              la confianza y seguridad, brindado productos de la más alta calidad al costo más bajo.
+            </p>
           </div>
+
         </div>
       </div>
     </div>
@@ -142,7 +173,7 @@ const Home = () => (
     <div align='center'>
       <h1 className='title_two'><b>TECNOLOGÍAS</b> QUE ENCAJAN PERFECTO</h1>
       <img src={divider} />
-      <p className='subtitle_two'>Nam liber tempor cum soluta nobis eleifend option congue <br /> nihil imperdiet doming id quod mazim.</p>
+      <p className='subtitle_two'>Usamos las tecnologias actuales <br /> con las mejores practicas de desarrollo de software.</p>
       <img className='modules' src={technologies} />
     </div>
   </div>

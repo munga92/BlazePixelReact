@@ -94,6 +94,9 @@ class RouterSpark extends Component {
             <div className='container'>
               <div className='content has-text-centered'>
                 <p className='is-font-white'>
+                  <strong>Copyright © 2018 Blaze Pixel, LLC. Todos los derechos reservados.</strong>
+                  <br />
+
                   <strong>Powered by</strong> <a href='http://blazepxel.com/' target='_blanck'>
                   Blaze Pixel.
                     <img src={logoBP} alt='Blaze Pixel' style={{width: 50, height: 50}} />
