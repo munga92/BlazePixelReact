@@ -21,10 +21,10 @@ const Home = () => (
         <div className='column'>
           <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
           <p>
-            Desarrollamos soluciones y herramientas tecnologicas a la medida de tu empresa.
+            Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
           </p>
           <p>
-            Tienes una gran idea nosotros te ayudamos a transformarla en una herramienta.
+            ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
           </p>
           <div className='columns '>
             <div className='column'>
@@ -48,7 +48,8 @@ const Home = () => (
         <h1 className="title_two">PODEMOS CREAR</h1>
         <img src={divider} />
         <p className='subtitle_two'>
-          Las herramientas tecnologicas que necesita tu empresa, <br /> quieres mejorar un proceso dentro de tu organizacion nosotros podemos ayudarte.
+        Herramientas tecnológicas que necesita tu empresa.<br/>
+        ¿Quieres mejorar un proceso dentro de tu organización? Nosotros podemos ayudarte.
         </p>
       </div>
       <div className='columns'>
@@ -66,7 +67,7 @@ const Home = () => (
                 Diseño Web y Gráfico.
               </p>
               <p>
-                Combinamos las tecnologias web escalables y flexibles con enfoque en experiencia de usuario, usabilidad, interactividad y distribución, contenido y graficos a la medida
+                Combinamos las tecnologías web escalables y flexibles con enfoque en experiencia de usuario (UX/UI), usabilidad, interactividad, distribución, contenido y gráficos a la medida que cumplan con las necesidades de su empresa.
               </p>
             </div>
             <div className='card-content'>
@@ -85,7 +86,7 @@ const Home = () => (
                 Desarrollo de Apps Móviles.
               </p>
               <p>
-                Desarrollamos la aplicacion movil que tienes en mente, tecnologias escalables y multiplataforma, interacción entre tu sistema y tu aplicación
+                Desarrollamos aplicaciones móviles a la medida, enfocándonos en la innovación constante, funcionalidad y estética visual generando apps integrales que funcionan a la perfección y se ven increíbles.
               </p>
             </div>
             <div className='card-content'>
@@ -104,7 +105,7 @@ const Home = () => (
                 Software a la medida.
               </p>
               <p>
-                Buscamos la mejor solución que se adapte a tu empresa, analisis y definicion de requiriemiento, interaccion con sistemas existentes, dispositivos moviles y bases de datos.
+                Buscamos la mejor solución que se adapte a tu empresa, analizamos el requerimiento y definimos un plan de acción que mejor se adecue con sus necesidades para resolverlas en el menor tiempo posible.
               </p>
             </div>
             <div className='card-content'>
@@ -120,7 +121,7 @@ const Home = () => (
     <div align="center">
       <h1 className='title_three'><b>CONSTRUYAMOS</b> ALGO GENIAL JUNTOS</h1>
       <img src={divider} />
-      <p className='subtitle'>Compartenos tus proyectos <br /> y construyamos algo increible juntos.</p>
+      <p className='subtitle'>Compartenos tus proyectos y construyamos algo increible juntos.</p>
     </div>
     <div className='section'>
       <div className='columns'>
@@ -128,16 +129,27 @@ const Home = () => (
           <div align="right" className='construction_top' style={{minHeight: '200px'}}>
             <p><b>Creamos soluciones tecnológicas <br /> hechas a la medida de su empresa.</b></p>
             <p>
-              Nos enfocamos en la solución a tu problema, desarrollamos la herramienta desde cero
-              y personalizada, llevamos acabo un analisis abordamos la problematica y obtenemos soluciones
-              metodologicas.
+              Nos enfocamos en la solución de
+              problemas, desarrollamos herramientas
+              desde cero y 100% personalizadas que le
+              permitan a su empresa automatizar
+              procesos, optimizar sus sistemas o
+              rediseñar su imagen.
              </p>
           </div>
 
             <div align="right" className='construction_bottom' style={{minHeight: '200px'}}>
               <p><b>Creatividad e innovación, la <br /> mezcla perfecta.</b></p>
               <p>
-                Nuestro equipo de trabajo contribuye con sus ideas y conocimientos para generar soluciones creativas e innovadoras, y así llevar nuestros productos a la mayor satisfacción de nuestros clientes.
+                Creemos firmemente que la creatividad es
+                parte fundamental en el desarrollo
+                tecnológico y visual de nuevas
+                herramientas, apps o sistemas. Por eso
+                estamos enfocados 100% en ofrecerle a
+                nuestros clientes un servicio personalizado
+                que nos permite involucrarnos en sus
+                proyectos para que el resultado sea único y
+                cumpla con todos sus requerimientos.
               </p>
             </div>
 
@@ -149,18 +161,26 @@ const Home = () => (
           <div className='construction_top' style={{minHeight: '200px'}}>
             <p><b>Calidad y funcionalidad son <br /> nuestros principios.</b></p>
             <p>
-              Durante el proceso de desarrollo nos encargamos de que se apliquen
-              las mejores practicas para lograr productos escalables, flexibles y
-              de alta calidad, que cubran los requerimientos de la industria tecnologica.
+              Durante el proceso de desarrollo nos
+              encargamos de que se apliquen las mejores
+              prácticas para lograr productos increíbles y que
+              tanto funcionalidad tecnológica como calidad
+              visual formen en conjunto un producto de alta
+              calidad que cumpla con todos los objetivos.
              </p>
           </div>
 
           <div className='construction_bottom' style={{minHeight: '200px'}}>
             <p><b>Nos enfocamos en brindar el <br /> mejor servicio, al menor costo.</b></p>
             <p>
-              Nuestros clíentes son lo más importante para nosotros, por tal motivo
-              ofrecemos el mejor de los servicios básados en la comunicación,
-              la confianza y seguridad, brindado productos de la más alta calidad al costo más bajo.
+              Nuestros clíentes son lo más importante
+              para nosotros, por tal motivo ofrecemos el
+              mejor de los servicios básados en la
+              comunicación, confianza y seguridad.
+              Involucramos a nuestros clientes durante
+              todo su proceso de desarrollo para
+              asegurarnos que obtengan el producto o
+              servicio que buscaban.
             </p>
           </div>
 
@@ -173,7 +193,7 @@ const Home = () => (
     <div align='center'>
       <h1 className='title_two'><b>TECNOLOGÍAS</b> QUE ENCAJAN PERFECTO</h1>
       <img src={divider} />
-      <p className='subtitle_two'>Usamos las tecnologias actuales <br /> con las mejores practicas de desarrollo de software.</p>
+      <p className='subtitle_two'>Usamos las tecnologias actuales con las mejores practicas de desarrollo de software.</p>
       <img className='modules' src={technologies} />
     </div>
   </div>
