@@ -23,7 +23,7 @@ html *
   background-size: 100% 100%;
 	margin-bottom: -55px;
   .columns{
-  	padding-top: 15vh
+  	padding-top: 10vh
   }
   .mockup{
 		width: 66%;
@@ -114,10 +114,17 @@ html *
   }
   .construction_top{
     padding-bottom: 10px;
+		text-align: right;
   }
   .construction_bottom{
     padding-top: 10px;
   }
+	.align-right{
+		text-align: right;
+	}
+	.align-left{
+		text-align: left;
+	}
 }
 
 .technologies{
