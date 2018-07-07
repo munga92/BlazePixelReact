@@ -16,9 +16,9 @@ const Home = () => (
     <div className='section' id='main'>
       <div className='columns'>
         <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
-          <img className='mockup' src={mockup} />
+          <img className='mockup' src={mockup} alt='Blaze Pixel' />
         </div>
-        <div className='column'>
+        <div className='column titles-transition'>
           <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
           <p>
             Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
@@ -126,8 +126,8 @@ const Home = () => (
     <div className='section'>
       <div className='columns'>
         <div className='column'>
-          <div align="right" className='construction_top' style={{minHeight: '200px'}}>
-            <p><b>Creamos soluciones tecnológicas <br /> hechas a la medida de su empresa.</b></p>
+          <div className='construction_top align-right' style={{minHeight: '200px'}}>
+            <p><b>Creamos soluciones tecnológicas hechas a la medida de su empresa.</b></p>
             <p>
               Nos enfocamos en la solución de
               problemas, desarrollamos herramientas
@@ -138,8 +138,8 @@ const Home = () => (
              </p>
           </div>
 
-            <div align="right" className='construction_bottom' style={{minHeight: '200px'}}>
-              <p><b>Creatividad e innovación, la <br /> mezcla perfecta.</b></p>
+            <div className='construction_bottom align-right' style={{minHeight: '200px'}}>
+              <p><b>Creatividad e innovación, la mezcla perfecta.</b></p>
               <p>
                 Creemos firmemente que la creatividad es
                 parte fundamental en el desarrollo
@@ -158,8 +158,8 @@ const Home = () => (
           <img src={construction} />
         </div>
         <div className='column'>
-          <div className='construction_top' style={{minHeight: '200px'}}>
-            <p><b>Calidad y funcionalidad son <br /> nuestros principios.</b></p>
+          <div className='construction_top align-left' style={{minHeight: '200px'}}>
+            <p><b>Calidad y funcionalidad son nuestros principios.</b></p>
             <p>
               Durante el proceso de desarrollo nos
               encargamos de que se apliquen las mejores
@@ -170,8 +170,8 @@ const Home = () => (
              </p>
           </div>
 
-          <div className='construction_bottom' style={{minHeight: '200px'}}>
-            <p><b>Nos enfocamos en brindar el <br /> mejor servicio, al menor costo.</b></p>
+          <div className='construction_bottom align-left' style={{minHeight: '200px'}}>
+            <p><b>Nos enfocamos en brindar el mejor servicio, al menor costo.</b></p>
             <p>
               Nuestros clíentes son lo más importante
               para nosotros, por tal motivo ofrecemos el
@@ -206,9 +206,9 @@ const Home = () => (
           <span className='contact-main-text'><b>¿Qué tienes en mente?</b></span>
           <h3 className='contact-text '>Cuéntanos, estamos listos para hacerlo realidad.</h3>
         </div>
-        <div className='column'>
-          <div className="card">
-            <div className="card-content">
+        <div className='column is-flex' style={{justifyContent: 'center'}} >
+          <div className="card" style={{width: '25rem'}}>
+            <div className="card-content" >
               <Contact />
             </div>
           </div>

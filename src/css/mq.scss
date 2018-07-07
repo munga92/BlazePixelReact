@@ -4,6 +4,10 @@
   }
   .home-full-img{
     background: transparent;
+    margin-bottom: -30px;
+    .columns{
+    	padding-top: 5vh
+    }
   }
   .technologies{
     .subtitle_two{
@@ -20,6 +24,14 @@
   }
   .construction{
     padding-top: 10vh;
+    .align-right{
+      text-align: center;
+      text-align: justify;
+    }
+    .align-left{
+      text-align: center;
+      text-align: justify;
+    }
   }
 }
 
