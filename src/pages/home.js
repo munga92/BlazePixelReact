@@ -13,12 +13,12 @@ import Contact from './contact'
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='section' id='main'>
+    <div className='section titles-transition' id='main'>
       <div className='columns'>
         <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
           <img className='mockup' src={mockup} alt='Blaze Pixel' />
         </div>
-        <div className='column titles-transition'>
+        <div className='column'>
           <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
           <p>
             Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
@@ -58,7 +58,7 @@ const Home = () => (
         </div>
         <div className='column'>
           <div class="card">
-            <div class="card-content" style={{minHeight: '370px'}}>
+            <div class="card-content" style={{minHeight: '380'}}>
               <div align="center">
                 <img src={web_desing} />
               </div>
@@ -77,7 +77,7 @@ const Home = () => (
         </div>
         <div className='column'>
           <div class="card">
-            <div class="card-content" style={{minHeight: '370px'}}>
+            <div class="card-content" style={{minHeight: '380px'}}>
               <div align="center">
                 <img src={apps} />
               </div>
@@ -96,7 +96,7 @@ const Home = () => (
         </div>
         <div className='column'>
           <div class="card">
-            <div class="card-content" style={{minHeight: '370px'}}>
+            <div class="card-content" style={{minHeight: '380px'}}>
               <div align="center">
                 <img src={sw} />
               </div>

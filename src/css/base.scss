@@ -216,3 +216,14 @@ span.contact-main-text{
 		max-height: none !important;
 	}
 }
+
+.titles-transition{
+  position: relative;
+  animation: intro 5s;
+	animation-timing-function: ease;
+}
+
+@keyframes intro {
+    from {left: 200px; color: #CFD8DC;}
+    to {left: 0px; color: $primary}
+}
