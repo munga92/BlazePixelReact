@@ -47,68 +47,70 @@ const Home = () => (
         ¿Quieres mejorar un proceso dentro de tu organización? Nosotros podemos ayudarte.
         </p>
       </div>
-      <div className="tile is-ancestor">
-        <div className="tile is-parent">
-          <article className="tile is-child box">
+      <div className="container">
+        <div className="tile is-ancestor">
+          <div className="tile is-parent">
+            <article className="tile is-child box">
+              <div align="center">
+                <img src={web_desing} />
+              </div>
+              <br />
+              <p className="title">
+                Diseño Web y Gráfico.
+              </p>
+              <p className="subtitle">
+                Combinamos las tecnologías web escalables y flexibles con enfoque en experiencia de usuario (UX/UI), usabilidad, interactividad, distribución, contenido y gráficos a la medida que cumplan con las necesidades de su empresa.
+              </p>
+              <div align="center">
+                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+              </div>
+            </article>
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child box">
+              <div align="center">
+                <img src={apps} />
+              </div>
+              <br />
+              <p className="title">
+                Desarrollo de Apps Móviles.
+              </p>
+              <p className="subtitle">
+                Desarrollamos aplicaciones móviles a la medida, enfocándonos en la innovación constante, funcionalidad y estética visual generando apps integrales que funcionan a la perfección y se ven increíbles.
+              </p>
+              <div align="center">
+                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+              </div>
+            </article>
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child box">
             <div align="center">
-              <img src={web_desing} />
-            </div>
-            <br />
-            <p className="title">
-              Diseño Web y Gráfico.
-            </p>
-            <p className="subtitle">
-              Combinamos las tecnologías web escalables y flexibles con enfoque en experiencia de usuario (UX/UI), usabilidad, interactividad, distribución, contenido y gráficos a la medida que cumplan con las necesidades de su empresa.
-            </p>
-            <div align="center">
-              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-            </div>
-          </article>
-        </div>
-        <div className="tile is-parent">
-          <article className="tile is-child box">
-            <div align="center">
-              <img src={apps} />
-            </div>
-            <br />
-            <p className="title">
-              Desarrollo de Apps Móviles.
-            </p>
-            <p className="subtitle">
-              Desarrollamos aplicaciones móviles a la medida, enfocándonos en la innovación constante, funcionalidad y estética visual generando apps integrales que funcionan a la perfección y se ven increíbles.
-            </p>
-            <div align="center">
-              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-            </div>
-          </article>
-        </div>
-        <div className="tile is-parent">
-          <article className="tile is-child box">
-           <div align="center">
-              <img src={sw} />
-            </div>
-            <br />
-            <p className="title">
-              Software a la medida.
-            </p>
-            <p className="subtitle">
-              Buscamos la mejor solución que se adapte a tu empresa, analizamos el requerimiento y definimos un plan de acción que mejor se adecue con sus necesidades para resolverlas en el menor tiempo posible.
-            </p>
-            <div align="center">
-              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-            </div>
-          </article>
-        </div>
-        <div className="tile is-parent">
-          <article className="tile is-child box">
-            <p className="title">Campañas SEM y SEO</p>
-            <p className="subtitle">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-            </p>
-            <div align="center">
-              <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-            </div>
-          </article>
+                <img src={sw} />
+              </div>
+              <br />
+              <p className="title">
+                Software a la medida.
+              </p>
+              <p className="subtitle">
+                Buscamos la mejor solución que se adapte a tu empresa, analizamos el requerimiento y definimos un plan de acción que mejor se adecue con sus necesidades para resolverlas en el menor tiempo posible.
+              </p>
+              <div align="center">
+                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+              </div>
+            </article>
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child box">
+              <p className="title">Campañas SEM y SEO</p>
+              <p className="subtitle">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+              </p>
+              <div align="center">
+                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </div>
@@ -121,62 +123,64 @@ const Home = () => (
       <p className='subtitle'>Compartenos tus proyectos y construyamos algo increible juntos.</p>
     </div>
     <div className='section'>
-      <div className='columns'>
-        <div className='column'>
-          <div style={{minHeight: '200px'}}>
-            <p><b>Calidad y funcionalidad son nuestros principios.</b></p>
-            <p>
-              Durante el proceso de desarrollo nos
-              encargamos de que se apliquen las mejores
-              prácticas para lograr productos increíbles y que
-              tanto funcionalidad tecnológica como calidad
-              visual formen en conjunto un producto de alta
-              calidad que cumpla con todos los objetivos.
-             </p>
+      <div className="container">
+        <div className='columns'>
+          <div className='column'>
+            <div style={{minHeight: '200px'}}>
+              <p><b>Calidad y funcionalidad son nuestros principios.</b></p>
+              <p>
+                Durante el proceso de desarrollo nos
+                encargamos de que se apliquen las mejores
+                prácticas para lograr productos increíbles y que
+                tanto funcionalidad tecnológica como calidad
+                visual formen en conjunto un producto de alta
+                calidad que cumpla con todos los objetivos.
+              </p>
+            </div>
+            <div style={{minHeight: '200px'}}>
+              <p><b>Nos enfocamos en brindar el mejor servicio, al menor costo.</b></p>
+              <p>
+                Nuestros clíentes son lo más importante
+                para nosotros, por tal motivo ofrecemos el
+                mejor de los servicios básados en la
+                comunicación, confianza y seguridad.
+                Involucramos a nuestros clientes durante
+                todo su proceso de desarrollo para
+                asegurarnos que obtengan el producto o
+                servicio que buscaban.
+              </p>
+            </div>
           </div>
-          <div style={{minHeight: '200px'}}>
-            <p><b>Nos enfocamos en brindar el mejor servicio, al menor costo.</b></p>
-            <p>
-              Nuestros clíentes son lo más importante
-              para nosotros, por tal motivo ofrecemos el
-              mejor de los servicios básados en la
-              comunicación, confianza y seguridad.
-              Involucramos a nuestros clientes durante
-              todo su proceso de desarrollo para
-              asegurarnos que obtengan el producto o
-              servicio que buscaban.
-            </p>
+          <div className='column'>
+            <div style={{minHeight: '200px'}}>
+              <p><b>Creamos soluciones tecnológicas hechas a la medida de su empresa.</b></p>
+              <p>
+                Nos enfocamos en la solución de
+                problemas, desarrollamos herramientas
+                desde cero y 100% personalizadas que le
+                permitan a su empresa automatizar
+                procesos, optimizar sus sistemas o
+                rediseñar su imagen.
+              </p>
+            </div>
+            <div style={{minHeight: '200px'}}>
+              <p><b>Creatividad e innovación, la mezcla perfecta.</b></p>
+              <p>
+                Creemos firmemente que la creatividad es
+                parte fundamental en el desarrollo
+                tecnológico y visual de nuevas
+                herramientas, apps o sistemas. Por eso
+                estamos enfocados 100% en ofrecerle a
+                nuestros clientes un servicio personalizado
+                que nos permite involucrarnos en sus
+                proyectos para que el resultado sea único y
+                cumpla con todos sus requerimientos.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className='column'>
-          <div style={{minHeight: '200px'}}>
-            <p><b>Creamos soluciones tecnológicas hechas a la medida de su empresa.</b></p>
-            <p>
-              Nos enfocamos en la solución de
-              problemas, desarrollamos herramientas
-              desde cero y 100% personalizadas que le
-              permitan a su empresa automatizar
-              procesos, optimizar sus sistemas o
-              rediseñar su imagen.
-             </p>
+          <div className='column is-flex'>
+            <img src={construction} />
           </div>
-          <div style={{minHeight: '200px'}}>
-            <p><b>Creatividad e innovación, la mezcla perfecta.</b></p>
-            <p>
-              Creemos firmemente que la creatividad es
-              parte fundamental en el desarrollo
-              tecnológico y visual de nuevas
-              herramientas, apps o sistemas. Por eso
-              estamos enfocados 100% en ofrecerle a
-              nuestros clientes un servicio personalizado
-              que nos permite involucrarnos en sus
-              proyectos para que el resultado sea único y
-              cumpla con todos sus requerimientos.
-            </p>
-          </div>
-        </div>
-        <div className='column is-flex'>
-          <img src={construction} />
         </div>
       </div>
     </div>
