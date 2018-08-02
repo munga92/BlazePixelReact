@@ -6,8 +6,7 @@ import {
 } from 'react-router-dom'
 import Home from './pages/home.js'
 
-import logo from './assets/img/logo.png'
-import logoBlaze from './assets/img/icon-blaze.png'
+import logo from './assets/img/blaze-logow.png'
 import logoBP from './assets/img/logoBlazePixel.png'
 import $ from 'jquery'
 
@@ -45,7 +44,7 @@ class RouterSpark extends Component {
     var {showImg} = this.state
     var navbar = ''
     if (showImg) {
-      navbar = (<img src={logoBlaze} alt='World Talent Consulting' width="38" height="40" />)
+      navbar = (<img src={logo} alt='Blaze Pixel' width="130" height="40" />)
     } else {
       navbar = (
         <img src={logo} alt='Blaze Pixel' width="130" height="40" />)
