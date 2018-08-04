@@ -1,6 +1,7 @@
 $primary: black;
 $white: white;
 $navbar-height: 5.5rem;
+$margin: 1rem;
 
 html *
 {
@@ -83,7 +84,7 @@ html *
 }
 
 .tile.is-child{
-	box-shadow: 15px 15px 25px;
+	box-shadow: 1px 5px 22px grey;
 }
 
 .navbar-brand{
@@ -252,4 +253,8 @@ span.contact-main-text{
 @keyframes intro {
     from {left: 200px; color: #CFD8DC;}
     to {left: 0px; color: $primary}
+}
+.margin-sides {
+	margin-left: $margin;
+	margin-right: $margin;
 }

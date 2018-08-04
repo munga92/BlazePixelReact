@@ -26,10 +26,8 @@ const Home = () => (
           </p>
           <div className='columns '>
             <div className='column'>
-              <a href="#contact" className='button is-rounded is-primary is-outlined'>CONTÁCTANOS</a>
-            </div>
-            <div className='column'>
-              <a href="#services" className='button is-rounded primary is-outlined'>EMPEZAR</a>
+              <a href="#services" className='button is-rounded primary is-outlined margin-sides'>EMPEZAR</a>
+              <a href="#contact" className='button is-rounded primary is-outlined margin-sides'>CONTÁCTANOS</a>
             </div>
           </div>
         </div>
