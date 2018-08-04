@@ -3,6 +3,9 @@
     display: none;
   }
   .home-full-img{
+    p {
+      color: $dark !important;
+    }
     background: transparent;
     margin-bottom: -30px;
     .columns{
