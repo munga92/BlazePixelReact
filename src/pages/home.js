@@ -5,6 +5,7 @@ import web_desing from '../assets/img/Diseño_Web.png'
 import apps from '../assets/img/apps.png'
 import sw from '../assets/img/software.png'
 import divider from '../assets/img/divisor-titulos–2.png'
+import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
@@ -12,7 +13,7 @@ const Home = () => (
 <div>
   <div className='home-full-img'>
     <div className='section' id='main'>
-      <div className='columns'>
+      <div className='columns' id="columns-header">
         <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
           <img className='mockup' src={home} alt='Blaze Pixel' />
         </div>
@@ -26,8 +27,12 @@ const Home = () => (
           </p>
           <div className='columns '>
             <div className='column'>
-              <a href="#services" className='button is-rounded primary is-outlined margin-sides'>EMPEZAR</a>
-              <a href="#contact" className='button is-rounded primary is-outlined margin-sides'>CONTÁCTANOS</a>
+              <a href="#contact" className='button is-rounded is-primary margin-sides'>
+                CONTÁCTANOS
+              </a>
+              <a href="#services" className='button is-rounded is-primary margin-sides'>
+                EMPEZAR
+              </a>
             </div>
           </div>
         </div>
@@ -112,6 +117,10 @@ const Home = () => (
         </div>
       </div>
     </div>
+  </div>
+
+  <div className='section img-phone is-paddingless'>
+    <img src={phone} />
   </div>
 
   <div className='construction section' id='about'>

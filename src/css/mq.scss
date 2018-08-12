@@ -3,9 +3,6 @@
     display: none;
   }
   .home-full-img{
-    p {
-      color: $dark !important;
-    }
     background: transparent;
     margin-bottom: -30px;
     .columns{
@@ -35,6 +32,15 @@
       text-align: center;
       text-align: justify;
     }
+  }
+  .home-full-img {
+    background: linear-gradient(to top, rgba(255,181,64,1) 0%, rgba(244,104,61,1) 100%);
+  }
+  #columns-header {
+    flex-direction: column-reverse;
+  }
+  .img-phone{
+  	display: block;
   }
 }
 
