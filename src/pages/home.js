@@ -9,6 +9,8 @@ import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Home = () => (
 <div>
   <div className='home-full-img'>
@@ -18,7 +20,9 @@ const Home = () => (
           <img className='mockup' src={home} alt='Blaze Pixel' />
         </div>
         <div className='column'>
-          <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+          <ScrollAnimation animateIn='bounceInRight'>
+            <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+          </ScrollAnimation>
           <p>
             Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
           </p>
@@ -40,95 +44,104 @@ const Home = () => (
     </div>
   </div>
 
-  <div className='wave' id='services'>
-    <div className='section'>
-      <div align="center" className='wave-text'>
-        <h1 className="title_two">PODEMOS CREAR</h1>
-        <img src={divider} />
-        <p className='subtitle_two'>
-        Herramientas tecnológicas que necesita tu empresa.<br/>
-        ¿Quieres mejorar un proceso dentro de tu organización? Nosotros podemos ayudarte.
-        </p>
-      </div>
-      <div className="container">
-        <div className="tile is-ancestor">
-          <div className="tile is-parent">
-            <article className="tile is-child box">
+
+  <ScrollAnimation animateIn="fadeIn">
+    <div className='wave' id='services'>
+      <div className='section'>
+        <div align="center" className='wave-text'>
+          <h1 className="title_two">PODEMOS CREAR</h1>
+          <img src={divider} />
+          <p className='subtitle_two'>
+          Herramientas tecnológicas que necesita tu empresa.<br/>
+          ¿Quieres mejorar un proceso dentro de tu organización? Nosotros podemos ayudarte.
+          </p>
+        </div>
+        <div className="container">
+          <div className="tile is-ancestor">
+            <div className="tile is-parent">
+              <article className="tile is-child box">
+                <div align="center">
+                  <img src={web_desing} />
+                </div>
+                <br />
+                <p className="title">
+                  Diseño Web y Gráfico.
+                </p>
+                <p className="subtitle">
+                  Combinamos las tecnologías web escalables y flexibles con enfoque en experiencia de usuario (UX/UI), usabilidad, interactividad, distribución, contenido y gráficos a la medida que cumplan con las necesidades de su empresa.
+                </p>
+                <div align="center">
+                  <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+                </div>
+              </article>
+            </div>
+            <div className="tile is-parent">
+              <article className="tile is-child box">
+                <div align="center">
+                  <img src={apps} />
+                </div>
+                <br />
+                <p className="title">
+                  Desarrollo de Apps Móviles.
+                </p>
+                <p className="subtitle">
+                  Desarrollamos aplicaciones móviles a la medida, enfocándonos en la innovación constante, funcionalidad y estética visual generando apps integrales que funcionan a la perfección y se ven increíbles.
+                </p>
+                <div align="center">
+                  <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+                </div>
+              </article>
+            </div>
+            <div className="tile is-parent">
+              <article className="tile is-child box">
               <div align="center">
-                <img src={web_desing} />
-              </div>
-              <br />
-              <p className="title">
-                Diseño Web y Gráfico.
-              </p>
-              <p className="subtitle">
-                Combinamos las tecnologías web escalables y flexibles con enfoque en experiencia de usuario (UX/UI), usabilidad, interactividad, distribución, contenido y gráficos a la medida que cumplan con las necesidades de su empresa.
-              </p>
-              <div align="center">
-                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-              </div>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <div align="center">
-                <img src={apps} />
-              </div>
-              <br />
-              <p className="title">
-                Desarrollo de Apps Móviles.
-              </p>
-              <p className="subtitle">
-                Desarrollamos aplicaciones móviles a la medida, enfocándonos en la innovación constante, funcionalidad y estética visual generando apps integrales que funcionan a la perfección y se ven increíbles.
-              </p>
-              <div align="center">
-                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-              </div>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-            <div align="center">
-                <img src={sw} />
-              </div>
-              <br />
-              <p className="title">
-                Software a la medida.
-              </p>
-              <p className="subtitle">
-                Buscamos la mejor solución que se adapte a tu empresa, analizamos el requerimiento y definimos un plan de acción que mejor se adecue con sus necesidades para resolverlas en el menor tiempo posible.
-              </p>
-              <div align="center">
-                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-              </div>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="title">Campañas SEM y SEO</p>
-              <p className="subtitle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </p>
-              <div align="center">
-                <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
-              </div>
-            </article>
+                  <img src={sw} />
+                </div>
+                <br />
+                <p className="title">
+                  Software a la medida.
+                </p>
+                <p className="subtitle">
+                  Buscamos la mejor solución que se adapte a tu empresa, analizamos el requerimiento y definimos un plan de acción que mejor se adecue con sus necesidades para resolverlas en el menor tiempo posible.
+                </p>
+                <div align="center">
+                  <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+                </div>
+              </article>
+            </div>
+            <div className="tile is-parent">
+              <article className="tile is-child box">
+                <p className="title">Campañas SEM y SEO</p>
+                <p className="subtitle">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                </p>
+                <div align="center">
+                  <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </ScrollAnimation>
 
-  <div className='section img-phone is-paddingless'>
-    <img src={phone} />
-  </div>
+  <ScrollAnimation animateIn="fadeIn">
+    <div className='section img-phone is-paddingless'>
+      <img src={phone} />
+    </div>
+  </ScrollAnimation>
 
   <div className='construction section' id='about'>
-    <div align="center">
-      <h1 className='title_three'><b>CONSTRUYAMOS</b> ALGO GENIAL JUNTOS</h1>
-      <img src={divider} />
-      <p className='subtitle'>Compartenos tus proyectos y construyamos algo increible juntos.</p>
-    </div>
+    <ScrollAnimation
+      animateIn='fadeIn'>
+      <div align="center">
+        <h1 className='title_three'><b>CONSTRUYAMOS</b> ALGO GENIAL JUNTOS</h1>
+        <img src={divider} />
+        <p className='subtitle'>Compartenos tus proyectos y construyamos algo increible juntos.</p>
+      </div>
+    </ScrollAnimation>
+
     <div className='section'>
       <div className="container">
         <div className='columns'>
