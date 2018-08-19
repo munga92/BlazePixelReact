@@ -45,39 +45,6 @@ const Home = () => (
           </div>
         </div>
       </div>
-
-      {
-        // <div className='columns' id="columns-header">
-        //   <div className='colum is-flex' style={{alignItems: 'center'}}>
-        //     <img className='mockup' src={home} alt='Blaze Pixel' />
-        //   </div>
-        //   <div className='column'>
-        //     <div className='columns'>
-        //       <div className='column'>
-        //         <ScrollAnimation animateIn='bounceInRight'>
-        //           <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
-        //         </ScrollAnimation>
-        //         <p>
-        //           Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
-        //         </p>
-        //         <p>
-        //           ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
-        //         </p>
-        //       </div>
-        //     </div>
-        //     <div className='columns '>
-        //       <div className='column'>
-        //         <a href="#contact" className='button is-rounded is-primary margin-sides'>
-        //           CONTÁCTANOS
-        //         </a>
-        //         <a href="#services" className='button is-rounded is-primary margin-sides'>
-        //           EMPEZAR
-        //         </a>
-        //       </div>
-        //     </div>
-        //   </div>
-        // </div>
-      }
     </div>
   </div>
 
