@@ -55,7 +55,7 @@ class RouterSpark extends Component {
         <div>
           <nav className={'navbar ' + this.state.classHeader + (this.state.showMenu ? ' header-black' : '')}>
             <div className='navbar-brand'>
-              <a class="navbar-item" href="#main">
+              <a className="navbar-item" href="#main">
                 {navbar}
               </a>
               <div className={'navbar-burger burger ' + (this.state.showMenu ? 'is-active' : '')}
