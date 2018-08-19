@@ -9,34 +9,75 @@ import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='section' id='main'>
-      <div className='columns' id="columns-header">
-        <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
+    <div className='section container' id='main'>
+      <div className='columns'>
+        <div className='column is-flex' style={{alignItems: 'center'}}>
           <img className='mockup' src={home} alt='Blaze Pixel' />
         </div>
         <div className='column'>
-          <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
-          <p>
-            Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
-          </p>
-          <p>
-            ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
-          </p>
-          <div className='columns '>
+          <div className='columns'>
             <div className='column'>
-              <a href="#contact" className='button is-rounded is-primary margin-sides'>
+              <ScrollAnimation animateIn='bounceInRight'>
+                <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+              </ScrollAnimation>
+              <p>
+                Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
+              </p>
+              <p>
+                ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
+              </p>
+            </div>
+          </div>
+          <div className='columns'>
+            <div className='column'>
+              <a href="#contact" className='button is-rounded is-secondary margin-sides'>
                 CONTÁCTANOS
               </a>
-              <a href="#services" className='button is-rounded is-primary margin-sides'>
+              <a href="#services" className='button is-rounded is-secondary margin-sides'>
                 EMPEZAR
               </a>
             </div>
           </div>
         </div>
       </div>
+
+      {
+        // <div className='columns' id="columns-header">
+        //   <div className='colum is-flex' style={{alignItems: 'center'}}>
+        //     <img className='mockup' src={home} alt='Blaze Pixel' />
+        //   </div>
+        //   <div className='column'>
+        //     <div className='columns'>
+        //       <div className='column'>
+        //         <ScrollAnimation animateIn='bounceInRight'>
+        //           <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+        //         </ScrollAnimation>
+        //         <p>
+        //           Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
+        //         </p>
+        //         <p>
+        //           ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
+        //         </p>
+        //       </div>
+        //     </div>
+        //     <div className='columns '>
+        //       <div className='column'>
+        //         <a href="#contact" className='button is-rounded is-primary margin-sides'>
+        //           CONTÁCTANOS
+        //         </a>
+        //         <a href="#services" className='button is-rounded is-primary margin-sides'>
+        //           EMPEZAR
+        //         </a>
+        //       </div>
+        //     </div>
+        //   </div>
+        // </div>
+      }
     </div>
   </div>
 
