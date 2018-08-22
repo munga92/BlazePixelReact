@@ -4,33 +4,42 @@ import home from '../assets/img/grafico-head.png'
 import web_desing from '../assets/img/Diseño_Web.png'
 import apps from '../assets/img/apps.png'
 import sw from '../assets/img/software.png'
+import mkt from '../assets/img/mkt.png'
 import divider from '../assets/img/divisor-titulos–2.png'
 import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='section' id='main'>
-      <div className='columns' id="columns-header">
-        <div className='colum is-flex is-three-fifths' style={{alignItems: 'center'}}>
+    <div className='section container' id='main'>
+      <div className='columns'>
+        <div className='column is-flex' style={{alignItems: 'center'}}>
           <img className='mockup' src={home} alt='Blaze Pixel' />
         </div>
         <div className='column'>
-          <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
-          <p>
-            Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
-          </p>
-          <p>
-            ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
-          </p>
-          <div className='columns '>
+          <div className='columns'>
             <div className='column'>
-              <a href="#contact" className='button is-rounded is-primary margin-sides'>
+              <ScrollAnimation animateIn='bounceInRight'>
+                <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+              </ScrollAnimation>
+              <p>
+                Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
+              </p>
+              <p>
+                ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
+              </p>
+            </div>
+          </div>
+          <div className='columns'>
+            <div className='column'>
+              <a href="#contact" className='button is-rounded is-secondary margin-sides'>
                 CONTÁCTANOS
               </a>
-              <a href="#services" className='button is-rounded is-primary margin-sides'>
+              <a href="#services" className='button is-rounded is-secondary margin-sides'>
                 EMPEZAR
               </a>
             </div>
@@ -105,10 +114,14 @@ const Home = () => (
           </div>
           <div className="tile is-parent">
             <article className="tile is-child box">
+              <div align='center'>
+                <img src={mkt} />
+              </div>
+              <br />
               <p className="title">Campañas SEM y SEO</p>
-              <p className="subtitle">
+              <div className="subtitle">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </p>
+              </div>
               <div align="center">
                 <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
               </div>
