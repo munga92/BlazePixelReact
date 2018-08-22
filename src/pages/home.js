@@ -4,6 +4,7 @@ import home from '../assets/img/grafico-head.png'
 import web_desing from '../assets/img/Diseño_Web.png'
 import apps from '../assets/img/apps.png'
 import sw from '../assets/img/software.png'
+import mkt from '../assets/img/mkt.png'
 import divider from '../assets/img/divisor-titulos–2.png'
 import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
@@ -113,10 +114,14 @@ const Home = () => (
           </div>
           <div className="tile is-parent">
             <article className="tile is-child box">
+              <div align='center'>
+                <img src={mkt} />
+              </div>
+              <br />
               <p className="title">Campañas SEM y SEO</p>
-              <p className="subtitle">
+              <div className="subtitle">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </p>
+              </div>
               <div align="center">
                 <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
               </div>
