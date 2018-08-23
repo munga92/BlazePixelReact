@@ -198,8 +198,8 @@ const Home = () => (
               </p>
             </div>
           </div>
-          <div className='column is-flex'>
-            <img src={construction} />
+          <div className='column is-flex' style={{justifyContent: 'center'}}>
+            <img src={construction} style={{height: '350px', width: '460px'}} />
           </div>
         </div>
       </div>
