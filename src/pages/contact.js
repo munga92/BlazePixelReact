@@ -41,6 +41,7 @@ class Contact extends Component {
               <div className='field'>
                 <div className='control'>
                   <input
+                    required
                     className='input'
                     name='name'
                     type='text'
@@ -58,6 +59,7 @@ class Contact extends Component {
                 <div className='control'>
                   <input
                     className='input'
+                    required
                     name='email'
                     type='email'
                     placeholder={'Email'}
@@ -73,6 +75,7 @@ class Contact extends Component {
               <div className='field'>
                 <div className='control'>
                   <input
+                    required
                     className='input '
                     name='subject'
                     type='text'
@@ -89,6 +92,7 @@ class Contact extends Component {
               <div className='field'>
                 <div className='control'>
                   <textarea
+                    required
                     className='textarea'
                     placeholder='Mensaje'
                     value={form.message}
