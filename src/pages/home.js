@@ -6,13 +6,14 @@ import apps from '../assets/img/apps.png'
 import sw from '../assets/img/software.png'
 import mkt from '../assets/img/mkt.png'
 import divider from '../assets/img/divisor-titulos–2.png'
+import dividerw from '../assets/img/divisor-titulos.png'
 import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
-import construction from '../assets/img/fabrica.png'
 import facebook from '../assets/img/facebook.png'
 import twitter from '../assets/img/twitter.png'
 import instagram from '../assets/img/instagram.png'
 import linkedin from '../assets/img/linkedin.png'
+import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -213,7 +214,7 @@ const Home = () => (
   <div className='technologies section'>
     <div align='center'>
       <h1 className='title_two'>TECNOLOGÍAS QUE <b>ENCAJAN PERFECTO</b></h1>
-      <img src={divider} />
+      <img src={dividerw} />
       <p className='subtitle_two'>Usamos las tecnologias actuales con las mejores practicas de desarrollo de software.</p>
       <img className='modules' src={technologies} />
     </div>
