@@ -9,6 +9,10 @@ import divider from '../assets/img/divisor-titulos–2.png'
 import phone from '../assets/img/phone.png'
 import technologies from '../assets/img/tecnologias.png'
 import construction from '../assets/img/fabrica.png'
+import facebook from '../assets/img/facebook.png'
+import twitter from '../assets/img/twitter.png'
+import instagram from '../assets/img/instagram.png'
+import linkedin from '../assets/img/linkedin.png'
 import Contact from './contact'
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -222,6 +226,29 @@ const Home = () => (
           <h1 className='contact-main-text'><b>Nos encantaría saber</b></h1>
           <span className='contact-main-text'><b>¿Qué tienes en mente?</b></span>
           <h3 className='contact-text '>Cuéntanos, estamos listos para hacerlo realidad.</h3>
+          <br/>
+          <div className='columns is-mobile'>
+            <div className='column' align='center'>
+              <a href="https://www.facebook.com/blazepxel/" target='_blank' rel="noopener noreferrer">
+                <img src={facebook} style={{width: '4rem', marginTop: '9px'}}/>
+              </a>
+            </div>
+            <div className='column' align='center'>
+              <a href="https://twitter.com/blaze_pixel" target='_blank' rel="noopener noreferrer">
+                <img src={twitter} style={{width: '4rem', marginTop: '9px'}}/>
+              </a>
+            </div>
+            <div className='column' align='center'>
+              <a href="https://www.instagram.com/blazepixel/" target='_blank' rel="noopener noreferrer">
+                <img src={instagram} style={{width: '4rem', marginTop: '9px'}}/>
+              </a>
+            </div>
+            <div className='column' align='center'>
+              <a href="https://www.linkedin.com/company/blaze-pixel/" target='_blank' rel="noopener noreferrer">
+                <img src={linkedin} style={{width: '4rem', marginTop: '9px'}}/>
+              </a>
+            </div>
+          </div>
         </div>
         <div className='column is-flex' style={{justifyContent: 'center'}} >
           <div className="card" style={{width: '25rem'}}>
