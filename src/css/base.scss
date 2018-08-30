@@ -23,7 +23,7 @@ html *
 		height: 85vh;
 	}
 	@include from($desktop){
-		height: 80vh;
+		height: 80vh !important;
 	}
 	background-image: url('./assets/img/bg-head.png');
 	//background: linear-gradient(to top, rgba(255,181,64,1) 0%, rgba(244,104,61,1) 100%);
@@ -148,6 +148,22 @@ html *
 	}
 	.align-left{
 		text-align: left;
+	}
+	.factory-mobile{
+		@include touch{
+			display: block !important;
+		}
+		@include from($desktop){
+			display: none !important;
+		}
+	}
+	.factory-desktop{
+		@include touch{
+			display: none !important;
+		}
+		@include from($desktop){
+			display: block !important;
+		}
 	}
 }
 

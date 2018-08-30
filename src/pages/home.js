@@ -182,6 +182,9 @@ const Home = () => (
               </p>
             </div>
           </div>
+          <div className='column is-flex factory-mobile' style={{justifyContent: 'center'}}>
+            <img src={construction} style={{height: '350px', width: '460px'}} />
+          </div>
           <div className='column'>
             <div style={{minHeight: '200px'}}>
               <p><b>Creamos soluciones tecnológicas hechas a la medida de su empresa.</b></p>
@@ -209,7 +212,7 @@ const Home = () => (
               </p>
             </div>
           </div>
-          <div className='column is-flex' style={{justifyContent: 'center'}}>
+          <div className='column is-flex factory-desktop' style={{justifyContent: 'center'}}>
             <img src={construction} style={{height: '350px', width: '460px'}} />
           </div>
         </div>
@@ -233,27 +236,30 @@ const Home = () => (
           <h1 className='contact-main-text'><b>Nos encantaría saber</b></h1>
           <span className='contact-main-text'><b>¿Qué tienes en mente?</b></span>
           <h3 className='contact-text '>Cuéntanos, estamos listos para hacerlo realidad.</h3>
-          <br/>
           <div className='columns is-mobile'>
-            <div className='column' align='center'>
-              <a href="https://www.facebook.com/blazepxel/" target='_blank' rel="noopener noreferrer">
-                <img src={facebook} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
-            </div>
-            <div className='column' align='center'>
-              <a href="https://twitter.com/blaze_pixel" target='_blank' rel="noopener noreferrer">
-                <img src={twitter} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
-            </div>
-            <div className='column' align='center'>
-              <a href="https://www.instagram.com/blazepixel/" target='_blank' rel="noopener noreferrer">
-                <img src={instagram} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
-            </div>
-            <div className='column' align='center'>
-              <a href="https://www.linkedin.com/company/blaze-pixel/" target='_blank' rel="noopener noreferrer">
-                <img src={linkedin} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
+            <div className='column is-half-desktop is-offset-one-quarter-desktop'>
+              <div className='columns is-mobile'>
+                <div className='column' align='center'>
+                  <a href="https://www.facebook.com/blazepxel/" target='_blank' rel="noopener noreferrer">
+                    <img src={facebook} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+                <div className='column' align='center'>
+                  <a href="https://twitter.com/blaze_pixel" target='_blank' rel="noopener noreferrer">
+                    <img src={twitter} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+                <div className='column' align='center'>
+                  <a href="https://www.instagram.com/blazepixel/" target='_blank' rel="noopener noreferrer">
+                    <img src={instagram} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+                <div className='column' align='center'>
+                  <a href="https://www.linkedin.com/company/blaze-pixel/" target='_blank' rel="noopener noreferrer">
+                    <img src={linkedin} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
