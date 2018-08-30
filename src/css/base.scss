@@ -23,7 +23,7 @@ html *
 		height: 100%;
 	}
 	@include from($desktop){
-		height: 100vh;
+		height: 80vh !important;
 	}
   background-image: url('./assets/img/bg-head.png');
 	background-repeat: no-repeat;
@@ -148,6 +148,22 @@ html *
 	}
 	.align-left{
 		text-align: left;
+	}
+	.factory-mobile{
+		@include touch{
+			display: block !important;
+		}
+		@include from($desktop){
+			display: none !important;
+		}
+	}
+	.factory-desktop{
+		@include touch{
+			display: none !important;
+		}
+		@include from($desktop){
+			display: block !important;
+		}
 	}
 }
 
