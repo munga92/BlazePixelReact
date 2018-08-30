@@ -16,6 +16,11 @@ import linkedin from '../assets/img/linkedin.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
 import ScrollAnimation from 'react-animate-on-scroll';
+import FontAwesome from 'react-fontawesome'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt, faRocket } from '@fortawesome/free-solid-svg-icons'
+
 
 const Home = () => (
 <div>
@@ -41,11 +46,16 @@ const Home = () => (
           </div>
           <div className='columns'>
             <div className='column'>
-              <a href="#contact" className='button is-rounded is-secondary margin-sides'>
-                CONTÁCTANOS
+              <a href="#contact" className='button is-rounded margin-sides btn-contact'>
+                Contáctanos
+                &nbsp;
+                <FontAwesomeIcon icon={faMobileAlt} />
+
               </a>
-              <a href="#services" className='button is-rounded is-secondary margin-sides'>
-                EMPEZAR
+              <a href="#services" className='button is-rounded margin-sides btn-contact'>
+                Empezar
+                &nbsp;
+                <FontAwesomeIcon icon={faRocket} />
               </a>
             </div>
           </div>
