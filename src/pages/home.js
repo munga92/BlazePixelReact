@@ -16,43 +16,49 @@ import linkedin from '../assets/img/linkedin.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
 import ScrollAnimation from 'react-animate-on-scroll';
+import FontAwesome from 'react-fontawesome'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt, faRocket } from '@fortawesome/free-solid-svg-icons'
+
 
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='section container' id='main'>
-      <div className='columns'>
-        <div className='column is-flex' style={{alignItems: 'center'}}>
-          <img className='mockup' src={home} alt='Blaze Pixel' />
-        </div>
-        <div className='column'>
-          <div className='columns'>
-            <div className='column'>
-              <ScrollAnimation animateIn='bounceInRight'>
-                <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
-              </ScrollAnimation>
-              <p>
-                Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
-              </p>
-              <p>
-                ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
-              </p>
-            </div>
+      <div className='section container' id='main'>
+        <div className='columns is-reverse-mobile'>
+          <div className='column column-image-header' style={{alignItems: 'center'}}>
+             <img className='mockup' src={home} alt='Blaze Pixel' />
           </div>
-          <div className='columns'>
-            <div className='column'>
-              <a href="#contact" className='button is-rounded is-secondary margin-sides'>
-                CONTÁCTANOS
+          <div className='column'>
+            <ScrollAnimation animateIn='bounceInRight'>
+              <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+            </ScrollAnimation>
+            <p>
+              Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
+            </p>
+            <p>
+              ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
+            </p>
+            <br />
+            <div>
+              <a href="#contact" className='button is-rounded btn-contact'>
+                Contáctanos
+                &nbsp;
+                <FontAwesomeIcon icon={faMobileAlt} />
+
               </a>
-              <a href="#services" className='button is-rounded is-secondary margin-sides'>
-                EMPEZAR
+              &nbsp;
+              <a href="#services" className='button is-rounded btn-contact'>
+                Empezar
+                &nbsp;
+                <FontAwesomeIcon icon={faRocket} />
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
   <div className='wave' id='services'>
     <div className='section'>
