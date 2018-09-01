@@ -30,7 +30,7 @@ const Home = () => (
           <div className='column column-image-header' style={{alignItems: 'center'}}>
              <img className='mockup' src={home} alt='Blaze Pixel' />
           </div>
-          <div className='column'>
+          <div className='column' style={{alignSelf: 'center'}}>
             <ScrollAnimation animateIn='bounceInRight'>
               <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
             </ScrollAnimation>
@@ -48,6 +48,8 @@ const Home = () => (
                 <FontAwesomeIcon icon={faMobileAlt} />
 
               </a>
+              &nbsp;
+              &nbsp;
               &nbsp;
               <a href="#services" className='button is-rounded btn-contact'>
                 Empezar
