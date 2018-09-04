@@ -133,7 +133,9 @@ const Home = () => (
               <br />
               <p className="title">Campañas SEM y SEO</p>
               <div className="subtitle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                <p>
+                  Incrementamos el número de prospectos, ventas y visitas a su sitio web mediante la implementación de campañas SEO utilizando las mejores prácticas y estrategias que le brinden resultados rápidos y al menor costo.
+                </p>
               </div>
               <div align="center">
                 <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
