@@ -16,43 +16,51 @@ import linkedin from '../assets/img/linkedin.png'
 import construction from '../assets/img/fabrica.png'
 import Contact from './contact'
 import ScrollAnimation from 'react-animate-on-scroll';
+import FontAwesome from 'react-fontawesome'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt, faRocket } from '@fortawesome/free-solid-svg-icons'
+
 
 const Home = () => (
 <div>
   <div className='home-full-img'>
-    <div className='section container' id='main'>
-      <div className='columns'>
-        <div className='column is-flex' style={{alignItems: 'center'}}>
-          <img className='mockup' src={home} alt='Blaze Pixel' />
-        </div>
-        <div className='column'>
-          <div className='columns'>
-            <div className='column'>
-              <ScrollAnimation animateIn='bounceInRight'>
-                <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
-              </ScrollAnimation>
-              <p>
-                Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
-              </p>
-              <p>
-                ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
-              </p>
-            </div>
+      <div className='section container' id='main'>
+        <div className='columns is-reverse-mobile'>
+          <div className='column column-image-header' style={{alignItems: 'center'}}>
+             <img className='mockup' src={home} alt='Blaze Pixel' />
           </div>
-          <div className='columns'>
-            <div className='column'>
-              <a href="#contact" className='button is-rounded is-secondary margin-sides'>
-                CONTÁCTANOS
+          <div className='column' style={{alignSelf: 'center'}}>
+            <ScrollAnimation animateIn='bounceInRight'>
+              <p className='title_one'><b>Hacemos que las cosas sucedan.</b></p>
+            </ScrollAnimation>
+            <p>
+              Desarrollamos soluciones y herramientas tecnológicas a la medida de tu empresa.
+            </p>
+            <p>
+              ¿Tienes una gran idea? nosotros te ayudamos a transformarla en una herramienta.
+            </p>
+            <br />
+            <div>
+              <a href="#contact" className='button is-rounded btn-contact'>
+                Contáctanos
+                &nbsp;
+                <FontAwesomeIcon icon={faMobileAlt} />
+
               </a>
-              <a href="#services" className='button is-rounded is-secondary margin-sides'>
-                EMPEZAR
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              <a href="#services" className='button is-rounded btn-contact'>
+                Empezar
+                &nbsp;
+                <FontAwesomeIcon icon={faRocket} />
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
   <div className='wave' id='services'>
     <div className='section'>
@@ -125,7 +133,9 @@ const Home = () => (
               <br />
               <p className="title">Campañas SEM y SEO</p>
               <div className="subtitle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                <p>
+                  Incrementamos el número de prospectos, ventas y visitas a su sitio web mediante la implementación de campañas SEO utilizando las mejores prácticas y estrategias que le brinden resultados rápidos y al menor costo.
+                </p>
               </div>
               <div align="center">
                 <a href="#contact" className='button is-rounded primary'>Estoy interesado</a>
@@ -176,6 +186,9 @@ const Home = () => (
               </p>
             </div>
           </div>
+          <div className='column is-flex factory-mobile' style={{justifyContent: 'center'}}>
+            <img src={construction} style={{height: '350px', width: '460px'}} />
+          </div>
           <div className='column'>
             <div style={{minHeight: '200px'}}>
               <p><b>Creamos soluciones tecnológicas hechas a la medida de su empresa.</b></p>
@@ -203,7 +216,7 @@ const Home = () => (
               </p>
             </div>
           </div>
-          <div className='column is-flex' style={{justifyContent: 'center'}}>
+          <div className='column is-flex factory-desktop' style={{justifyContent: 'center'}}>
             <img src={construction} style={{height: '350px', width: '460px'}} />
           </div>
         </div>
@@ -227,27 +240,30 @@ const Home = () => (
           <h1 className='contact-main-text'><b>Nos encantaría saber</b></h1>
           <span className='contact-main-text'><b>¿Qué tienes en mente?</b></span>
           <h3 className='contact-text '>Cuéntanos, estamos listos para hacerlo realidad.</h3>
-          <br/>
           <div className='columns is-mobile'>
-            <div className='column' align='center'>
-              <a href="https://www.facebook.com/blazepxel/" target='_blank' rel="noopener noreferrer">
-                <img src={facebook} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
-            </div>
-            <div className='column' align='center'>
-              <a href="https://twitter.com/blaze_pixel" target='_blank' rel="noopener noreferrer">
-                <img src={twitter} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
-            </div>
-            <div className='column' align='center'>
-              <a href="https://www.instagram.com/blazepixel/" target='_blank' rel="noopener noreferrer">
-                <img src={instagram} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
-            </div>
-            <div className='column' align='center'>
-              <a href="https://www.linkedin.com/company/blaze-pixel/" target='_blank' rel="noopener noreferrer">
-                <img src={linkedin} style={{width: '4rem', marginTop: '9px'}}/>
-              </a>
+            <div className='column is-half-desktop is-offset-one-quarter-desktop'>
+              <div className='columns is-mobile'>
+                <div className='column' align='center'>
+                  <a href="https://www.facebook.com/blazepxel/" target='_blank' rel="noopener noreferrer">
+                    <img src={facebook} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+                <div className='column' align='center'>
+                  <a href="https://twitter.com/blaze_pixel" target='_blank' rel="noopener noreferrer">
+                    <img src={twitter} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+                <div className='column' align='center'>
+                  <a href="https://www.instagram.com/blazepixel/" target='_blank' rel="noopener noreferrer">
+                    <img src={instagram} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+                <div className='column' align='center'>
+                  <a href="https://www.linkedin.com/company/blaze-pixel/" target='_blank' rel="noopener noreferrer">
+                    <img src={linkedin} style={{width: '3rem', marginTop: '15px'}}/>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
